@@ -1,0 +1,17 @@
+{
+  "type": "postgres",
+  "host": "courses.cv6hi7slm2ua.eu-west-3.rds.amazonaws.com",
+  "port": 5432,
+  "username": "postgres",
+  "password": "1aragon1",
+  "database": "courses",
+  "entities": ["./dist/**/*.entity.js"],
+  "synchronize": false,
+  "migrations": ["./dist/migrations/**/*.js"],
+  "subscribers": ["./dist/subscriber/**/.js"],
+  "cli": {
+    "entitiesDir": "src",
+    "migrationsDir": "migrations",
+    "subscribersDir": "subscriber"
+  }
+}
