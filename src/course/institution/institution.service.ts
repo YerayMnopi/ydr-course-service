@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { InstitutionEntity } from './Institution.entity';
+import { InstitutionEntity } from './institution.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { slugify, BaseService } from 'ydr-nest-common';

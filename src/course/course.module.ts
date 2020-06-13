@@ -7,9 +7,10 @@ import { InstitutionModule } from './institution/institution.module';
 import { PlatformModule } from './platform/platform.module';
 import { TeacherModule } from './teacher/teacher.module';
 import { CategoryModule } from './category/category.module';
+import { TypeModule } from './type/type.module';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([ CourseEntity ]), InstitutionModule, PlatformModule, TeacherModule, CategoryModule],
+  imports: [TypeOrmModule.forFeature([ CourseEntity ]), InstitutionModule, PlatformModule, TeacherModule, CategoryModule, TypeModule],
   providers: [CourseService],
   controllers: [CourseController],
   exports: [CourseService]

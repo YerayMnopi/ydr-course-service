@@ -41,8 +41,8 @@
     "rxjs": "^6.5.4",
     "swagger-ui-express": "^4.1.4",
     "typeorm": "^0.2.24",
-    "ydr-course-artifact": "^1.0.1",
-    "ydr-nest-common": "^1.0.2"
+    "ydr-course-artifact": "^1.0.3",
+    "ydr-nest-common": "^1.0.4"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.0.0",

@@ -1,16 +1,16 @@
 import { Injectable } from '@nestjs/common';
-import { TeacherEntity } from './teacher.entity';
+import { TypeEntity } from './type.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { slugify, BaseService } from 'ydr-nest-common';
 
 @Injectable()
-export class TeacherService extends BaseService<TeacherEntity>{
-    constructor(@InjectRepository(TeacherEntity) public readonly teacherRepository: Repository<TeacherEntity>){
-        super(teacherRepository);
+export class TypeService extends BaseService<TypeEntity>{
+    constructor(@InjectRepository(TypeEntity) public readonly typeRepository: Repository<TypeEntity>){
+        super(typeRepository);
     }
 
-    getOrCreateByName(name: string): Promise<TeacherEntity> {
+    getOrCreateByName(name: string): Promise<TypeEntity> {
         const slug = slugify(name);
 
         return super.getOrCreate({slug: slug}, {
@@ -20,5 +20,4 @@ export class TeacherService extends BaseService<TeacherEntity>{
             updatedAt: new Date()
         });
     }
-
 }
