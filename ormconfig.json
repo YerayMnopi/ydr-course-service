@@ -1,10 +1,10 @@
 {
   "type": "postgres",
-  "host": "courses.cv6hi7slm2ua.eu-west-3.rds.amazonaws.com",
+  "host": "localhost",
   "port": 5432,
   "username": "postgres",
-  "password": "1aragon1",
-  "database": "courses",
+  "password": "passwd",
+  "database": "ydr_courses_db",
   "entities": ["./dist/**/*.entity.js"],
   "synchronize": false,
   "migrations": ["./dist/migrations/**/*.js"],

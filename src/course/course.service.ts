@@ -8,8 +8,6 @@ import { InstitutionService } from './institution/institution.service';
 import { PlatformService } from './platform/platform.service';
 import { TeacherService } from './teacher/teacher.service';
 import { CategoryService } from './category/category.service';
-import { TeacherEntity } from './teacher/teacher.entity';
-import { CategoryEntity } from './category/category.entity';
 import { TypeService } from './type/type.service';
 
 @Injectable()
